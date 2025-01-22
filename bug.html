@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be replaced.
+  </div>
+  <script>
+    // Incorrect attempt to replace innerHTML using a variable without proper string concatenation
+    let newText = "New text";
+    document.getElementById("myDiv").innerHTML = newText;
+  </script>
+</body>
+</html>
